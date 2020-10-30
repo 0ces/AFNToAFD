@@ -53,12 +53,12 @@ class CambiarDeAutomata(object):
         for estado in self.estados:
             if any([estadoFinalInAutomata in estado for estadoFinalInAutomata in self.automataNoDeterminista.getEstadosFinales()]):
                 self.estadosFinales |= estado
-        print(f'estados: {self.estados}')
-        print(f'simbolos de entrada: {self.simbolosDeEntrada}')
-        print('transiciones:')
-        pprint(self.transiciones)
-        print(f'estadoInicial: {self.estadoInicial}')
-        print(f'estados finales: {self.estadosFinales}')
+        # print(f'estados: {self.estados}')
+        # print(f'simbolos de entrada: {self.simbolosDeEntrada}')
+        # print('transiciones:')
+        # pprint(self.transiciones)
+        # print(f'estadoInicial: {self.estadoInicial}')
+        # print(f'estados finales: {self.estadosFinales}')
         pprint(self.__dict__)
 
     def getClausura(self, estado):
